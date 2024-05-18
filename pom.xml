@@ -5,7 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Playlist_2</artifactId>
+<!--    ARTIFACT ID NIE MOŻE MIEĆ DUŻYCH LITER PRZY DEPLOYU-->
+    <artifactId>playlist_2</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,18 +14,22 @@
         <maven.compiler.target>16</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>at.favre.lib</groupId>
             <artifactId>bcrypt</artifactId>
             <version>0.10.2</version>
         </dependency>
-        <dependency>
-            <groupId>pl.umcs.oop</groupId>
-            <artifactId>site</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Miyukivv Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Miyukivv/site</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
